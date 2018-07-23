@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="menu">
+    <ul class="active clearfix">
+      <li class="current-item">
+        <a>Home</a>
+      </li>
+      <li>
+        <a>My Work<span class="arrow">&#9660;</span></a>
+        
+        <ul class="sub-menu">
+            <li><a>Past Projects</a></li>
+            <li><a>Current Projects</a></li>
+            <li><a>Hobbies</a></li>
+            <li><a>Gaming</a></li>
+        </ul>
+
+      </li>
+      <li>
+        <a>Nikhil Miranda</a>
+      </li>
+    </ul>
+
+    <a class="toggle-nav"></a>
+
+    <form class="search-form">
+      <input type="text" placeholder="Ask me anything ?    ¯\_(ツ)_/¯">
+      <button>Search</button>
+    </form>
+  </nav>
+
+  <script>
+    $(document).ready(function () {
+      $('.toggle-nav').click(function (e) {
+        $(this).toggleClass('active');
+        $('.menu ul').toggleClass('active');
+
+        e.preventDefault();
+      });
+    });
+  </script>
+
+</body>
+
+</html>
